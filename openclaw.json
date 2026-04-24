@@ -12,7 +12,30 @@
       "subagents": {
         "maxConcurrent": 6
       }
-    }
+    },
+    "list": [
+      {
+        "id": "main",
+        "default": true,
+        "workspace": "/data/.openclaw/workspace",
+        "agentDir": "/data/.openclaw/agents/main/agent",
+        "model": {
+          "primary": "anthropic/claude-opus-4-6"
+        },
+        "identity": {
+          "name": "marketing agent"
+        }
+      },
+      {
+        "id": "mso-agent",
+        "default": false,
+        "workspace": "/data/.openclaw/workspace-mso-agent",
+        "agentDir": "/data/.openclaw/agents/mso-agent/agent",
+        "identity": {
+          "name": "mso agent"
+        }
+      }
+    ]
   },
   "gateway": {
     "mode": "local",
