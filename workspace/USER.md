@@ -8,6 +8,8 @@
 
 ## Context
 
-- Runs "Humanity Marketing" — details TBD
-- First request: B2B KYC product campaign
-- Group chat: Humanity Marketing (bot) on Telegram
+- Runs "Humanity Marketing" on Telegram
+- **Product:** Humanity KYC — interoperable KYC with Humanity SDK. "One KYC, reusable everywhere."
+- **Target:** PayFi, onramp/offramp, RWA, exchanges, and other crypto projects needing KYC
+- **Goals:** Lead gen + brand awareness + product launch
+- **Channels:** Content marketing, events, Twitter ads
