@@ -127,9 +127,7 @@
           "requireMention": false
         }
       },
-      "groupAllowFrom": [
-        "5641435850"
-      ]
+      "groupAllowFrom": []
     }
   },
   "commands": {
