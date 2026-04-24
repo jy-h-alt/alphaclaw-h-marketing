@@ -2,7 +2,12 @@
   "groups": {
     "-1003909100192": {
       "name": "Humanity Marketing (bot)",
-      "topics": {},
+      "topics": {
+        "6": {
+          "name": "alphaclaw_chat",
+          "iconColor": 7322096
+        }
+      },
       "accountId": "default",
       "agentId": "default"
     }

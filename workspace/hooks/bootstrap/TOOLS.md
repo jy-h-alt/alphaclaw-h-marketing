@@ -53,6 +53,22 @@ Webhook transform files must follow this convention:
 - Never create transform files outside of hooks/transforms/
 - When modifying a transform, read the existing file first
 
+## Topic Registry
+
+When sending messages to group topics, use these thread IDs:
+
+| Group | Topic | Thread ID |
+| ----- | ----- | --------- |
+| Humanity Marketing (bot) (-1003909100192) | alphaclaw_chat | 6 |
+
+### Sync Rules
+
+When Telegram workspace is enabled, keep topic mappings in sync with real Telegram activity:
+
+- If a message arrives in an unregistered Telegram topic, ask the user to name it for addition to the registry.
+- When adding a topic (new or missing) run `alphaclaw telegram topic add --thread <threadId> --name "<topicName>"` immediately, no confirmation needed.
+- Never edit `hooks/bootstrap/TOOLS.md` directly for topic changes
+
 
 ## Available Google Accounts
 
