@@ -7,6 +7,10 @@
       },
       "models": {
         "anthropic/claude-opus-4-6": {}
+      },
+      "maxConcurrent": 8,
+      "subagents": {
+        "maxConcurrent": 6
       }
     }
   },
@@ -32,7 +36,13 @@
     }
   },
   "session": {
-    "dmScope": "per-channel-peer"
+    "dmScope": "per-channel-peer",
+    "resetByType": {
+      "thread": {
+        "mode": "idle",
+        "idleMinutes": 525600
+      }
+    }
   },
   "tools": {
     "profile": "full",
@@ -55,7 +65,9 @@
     },
     "allow": [
       "telegram",
-      "usage-tracker"
+      "usage-tracker",
+      "anthropic",
+      "memory-core"
     ],
     "load": {
       "paths": [
@@ -84,14 +96,22 @@
   },
   "meta": {
     "lastTouchedVersion": "2026.4.21",
-    "lastTouchedAt": "2026-04-24T05:04:47.561Z"
+    "lastTouchedAt": "2026-04-24T05:05:03.750Z"
   },
   "channels": {
     "telegram": {
       "enabled": true,
       "botToken": "${TELEGRAM_BOT_TOKEN}",
       "dmPolicy": "pairing",
-      "groupPolicy": "allowlist"
+      "groupPolicy": "allowlist",
+      "groups": {
+        "-1003909100192": {
+          "requireMention": false
+        }
+      },
+      "groupAllowFrom": [
+        "5641435850"
+      ]
     }
   },
   "commands": {
