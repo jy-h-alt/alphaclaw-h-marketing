@@ -25,15 +25,6 @@
         "identity": {
           "name": "marketing agent"
         }
-      },
-      {
-        "id": "mso-agent",
-        "default": false,
-        "workspace": "/data/.openclaw/workspace-mso-agent",
-        "agentDir": "/data/.openclaw/agents/mso-agent/agent",
-        "identity": {
-          "name": "mso agent"
-        }
       }
     ]
   },
@@ -101,6 +92,10 @@
   "auth": {
     "profiles": {
       "anthropic:default": {
+        "provider": "anthropic",
+        "mode": "token"
+      },
+      "anthropic:manual": {
         "provider": "anthropic",
         "mode": "token"
       }
